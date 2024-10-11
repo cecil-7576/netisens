@@ -1,18 +1,72 @@
- body{background-color: rgb(30, 156, 156);font-family: Arial, Helvetica, sans-serif;font-weight: bolder;border-color: aquamarine;border-width: 4px;border-style: solid;}
-            h1,h3,h4{background-color: orangered;border: 2px solid black;}
-            h1{text-align: center;font-size:;} 
-            h2{color: blueviolet;text-decoration: underline;text-align: none;font-size:;}
-            p{background-color: #e5e4d7;line-height:;padding: 20px;border: 2px solid black;margin: 20px;margin-top: 50px;margin-left: 400px;padding-left: 400px;}
-            .gold{color: gold;}
-            .underline {text-decoration: underline;}
-            p.blue{color: blue;font-size: 20px;font-style: italic;}
-            .green{color: green;}
-            th.white{color: wheat}
-            li.white{color: white;text-decoration: underline;}
-            input.pink{color: pink; background-color: aqua;}
-            option.blue{color: blue;background-color: green;}
-            option.green{color: green;background-color: blue;}
-            select.yellow{color: yellow;background-color: red;}
+            body{
+                background-color: rgb(30, 156, 156);
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: bolder;
+                border: 4px aquamarine solid;
+            }
+            h1,h3,h4{
+                background-color: orangered;
+                border: 2px solid black;
+                margin: 20px;
+            }
+            h1{
+                text-align: center;
+            } 
+            h2{
+                color: blueviolet;
+                text-decoration: underline;
+            }
+            p{
+                background-color: #e5e4d7;
+                line-height:;
+                padding: 20px;
+                border: 2px solid black;
+                margin: 20px;margin-top: 50px;
+                margin-left:;padding-left:;
+            }
+            .gold{
+                color: gold;
+            }
+            .underline {
+                text-decoration: underline;
+            }
+            p.blue{
+                color: blue;font-size: 20px;
+                font-style: italic;
+            }
+            .green{
+                color: green;
+            }
+            th.white{
+                color: wheat;
+            }
+            li.white{
+                color: white;
+                text-decoration: underline;
+            }
+            input.pink{
+                color: pink; 
+                background-color: aqua;
+            }
+            option.blue{
+                color: blue;
+                background-color: green;
+            }
+            option.green{
+                color: green;
+                background-color: blue;
+            }
+            select.yellow{
+                color: yellow;
+                background-color: red;
+            }
+            .imagec{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                padding: 3px;
+                background-color: silver;
+            }
             
 
 
