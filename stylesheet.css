@@ -6,16 +6,15 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  color: #2e2e2e;
-  background-color: coral;
+  color: #333;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     padding: 20px;
-    background-color: orangered;
-    color: whitesmoke;
+    background-color: #178dad;
+    color: #ddd5cb;
 }
 
 nav ul {
@@ -25,11 +24,27 @@ nav ul {
 }
 
 nav a {
+    text-decoration:none ;
     color: white;
 }
 
 .hero {
-    background-image: ;
+    background-image: url(maxxxi.jpg);
+    background-size: contain;
+    background-position: center;
+    color: #6b4226;
+    text-align: center;
+    padding: 100px 20px;
 }
+
+.hero h1 {
+font-size: 2.5em;
+margin-bottom: 20px;
+}
+
+.cta-button {
+    background-color: #;
+}
+
 
             
