@@ -67,6 +67,12 @@ select.yellow{
     margin-left: auto;
     margin-right: auto;
     padding: 3px;
-    background-color: silver;
-}            }
+border: silver;
+}  
+
+.hero {
+    display: flex;
+    background-position: center;
+    margin-right: 100px;
+}
 
