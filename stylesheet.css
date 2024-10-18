@@ -33,7 +33,7 @@ nav a {
     background-image: url(maxi.gif);
     background-size: contain;
     background-position: center;
-    color: #6b4226;
+    color: #0ebba4;
     text-align: center;
     padding: 100px 20px;
 }
@@ -71,8 +71,8 @@ footer {
     background-color: #5d728d;
     color: white;
     text-align: center;
-    padding: 20px;
-    ;
+    padding: 50px;
+    border: 20px solid rgb(39, 177, 231);
 }
 
 .social-icon img {
