@@ -8,6 +8,7 @@ h1,h3,h4{
     background-color: orangered;
     border: 2px solid black;
     margin: 20px;
+    text-align: right;
 }
 h1{
     text-align: center;
@@ -64,20 +65,24 @@ select.yellow{
     margin-left: auto;
     margin-right: auto;
     padding: 3px;
-border: silver;
+    border: silver;
 }  
 
-.hero {
+.imageb{
     display: flex;
-    background-position: center;
-    margin-right: 100px;
-}
-
-.hero1 {
-    color: #333;
-    font-size: 15px;
-    line-height: 1.5em;
-    background-color: greenyellow;
-    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
     border: 2px black solid;
 }
+
+#para7homepage {
+    color: black;
+    font-size: 15px;
+    line-height: 1.5em;
+    background-color: bisque;
+    padding: 20px;
+    border: 2px solid black;
+    margin: 20px 50px 400px;
+
+}
+
