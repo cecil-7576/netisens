@@ -30,12 +30,12 @@ nav a {
 }
 
 .hero {
-    background-image: url(maxi.gif);
+    background-image: url(masi.jpeg);
     background-size: contain;
     background-position: center;
-    color: #0ebba4;
+    color: #022722;
     text-align: center;
-    padding: 100px 20px;
+    padding: 10%;
 }
 
 .hero h1 {
@@ -54,6 +54,7 @@ margin-bottom: 20px;
 
 .cta-button:hover {
     background-color: #182b44;
+    border-radius: 10%;
 }
 
 .about, .menu {
