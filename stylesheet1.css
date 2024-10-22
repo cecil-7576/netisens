@@ -79,9 +79,9 @@ select.yellow{
     color: black;
     font-size: 15px;
     line-height: 1.5em;
-    background-color: bisque;
+    background-color: #e5e4d7;
     padding: 20px;
-    border: 2px solid black;
+    border: thick ridge #296a64;
     margin: 20px 50px 400px;
 
 }
