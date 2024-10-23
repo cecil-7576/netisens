@@ -19,14 +19,18 @@ header {
 }
 
 nav ul {
-    list-style: georgian;
+    list-style: lower-greek;
     display: flex;
     gap: 20px;
 }
 
 nav a {
-    text-decoration:none ;
+    text-decoration: none ;
     color: white;
+}
+
+nav a:hover {
+    color: darkred;
 }
 
 .hero {
@@ -73,7 +77,8 @@ footer {
     color: white;
     text-align: center;
     padding: 50px;
-    border: 20px solid rgb(39, 177, 231);
+    border-radius: 10px;
+    border-width: 200px;
 }
 
 .social-icon img {
