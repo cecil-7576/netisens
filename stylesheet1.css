@@ -13,6 +13,7 @@ h1,h3,h4{
 h1{
     text-align: center;
     background-image: url(cloud.gif);
+    color: black;
 } 
 h2{
     color: blueviolet;
@@ -23,6 +24,7 @@ p{
     line-height: 1.5em;
     margin-top: 50px;
     background-image: url(cloud.gif);
+    border-radius: 10px;
 }
 .gold{
     color: gold;
@@ -81,8 +83,36 @@ select.yellow{
     line-height: 1.5em;
     background-color: #e5e4d7;
     padding: 20px;
-    border: thick ridge #296a64;
+    border-bottom-style: dotted; color: red;
     margin: 20px 50px 400px;
-
+    border-radius: 10px;
 }
+
+#divform {
+    color: green;
+}
+
+.highlight {
+    background-color: rgb(178, 34, 166);
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+.maxxi{
+    color:
+    text-decoration: underline;
+}
+
+a:link {
+    color: blue;
+}
+
+a:visited {
+    color: red;
+}
+
+a:hover {
+    color: #f15a51;
+}
+
 
