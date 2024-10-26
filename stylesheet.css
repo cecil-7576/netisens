@@ -76,9 +76,10 @@ footer {
     background-color: #5d728d;
     color: white;
     text-align: center;
-    padding: 50px;
+    padding: 20px;
     border-radius: 10px;
     border-width: 200px;
+    
 }
 
 .social-icon img {
