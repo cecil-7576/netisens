@@ -2,26 +2,105 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
 }
 
-body {
+.b1 {
   font-family: Arial, Helvetica, sans-serif;
   color: #333;
   background-color: #08c7f224;
+}
+
+.b2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url(cloud.gif);
+    background-position: center;
+    background-size: cover;
+}
+
+.form {
+    position: relative;
+    max-width: 400px;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(30%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 50px;
+}
+
+#head-title {
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+}
+
+.inputbox {
+    position: relative;
+    margin: 30px 0;
+    max-width: 310px;
+    border-bottom: 2px solid #fff;
+}
+
+.inputbox label {
+    position: absolute;
+    top: 3px;
+    left: 4px; 
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 1rem;
+    pointer-events: none;
+    transition: all 0.5s ease-in-out;
+}
+
+input:focus ~ label,
+input:valid ~ label {
+    top: 5px;
+}
+
+.inputbox input {
+    width: 100%;
+    height: 60px;
+    background: transparent;
+    outline: none;
+    
+    font-size: 1rem;
+    padding: 0 35px o 5px;
+    color: #fff;
+}
+
+.inputbox ion-icon {
+    position: absolute;
+    right: 8px;
+    color:#fff;
+    font-size: 1.2rem;
+    top: 20px;
+}
+
+.forget {
+    margin: 35px 0;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     padding: 20px;
-    background-color: #178dad;
+    background-color: #318299;
     color: #ddd5cb;
+    font-size: larger;
+    
 }
 
 nav ul {
     list-style: lower-greek;
     display: flex;
-    gap: 20px;
+    gap: 30px;
+    
 }
 
 nav a {
@@ -33,13 +112,22 @@ nav a:hover {
     color: darkred;
 }
 
+a:link {
+    color: blueviolet;
+}
+
+a:visited {
+    color: rgb(172, 172, 245);
+}
+
+
 .hero {
     background-image: url(masi.jpeg);
     background-size: contain;
     background-position: center;
     color: #022722;
     text-align: center;
-    padding: 10%;
+    padding: 100px 20px;
 }
 
 .hero h1 {
