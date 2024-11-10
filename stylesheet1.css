@@ -121,14 +121,93 @@ a:hover {
 
 .imagem {
     float: left;
-    margin: right 10px;
-    margin-bottom: 300px;
+    margin: right 3px;
+    margin-bottom: 3px;
 }
 
 #square {
-    height: 25px;
+    height: 20px;
     width: 25px;
+    margin: 20px;
     background: red;
+}
+
+#circle {
+    height: 20px;
+    width: 25px;
+    margin: 20px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background: red;
+}
+
+.imagea {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 300px;
+}
+
+ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+ul li a {
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #f15a51;
+    color: white;
+    display: block;
+    width: 80px;
+    margin: 5px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    height: 30px;
+    text-align: center;
+    line-height: 25px;
+}
+
+ul li a:hover {
+    background-color: #f8c6c4;
+    color: black;
+}
+
+ol {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+ol li a {
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(57, 57, 253);
+    color: aliceblue;
+    display: block;
+    width: 70px;
+    margin: 10px;
+    padding: 20px;
+    border: 2px solid white;
+    border-radius: 5px;
+    text-align: center;
+    height: 25px;
+    line-height: 25px;
+}
+
+ol li a:hover {
+    background-color: rgb(141, 235, 235);
+    color: black;
+}
+
+.nav {
+    height: 40px;
+    background-color: red;
+    font-size: large;
+    
 }
 
 
