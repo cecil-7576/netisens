@@ -16,9 +16,10 @@
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background-image: url(cloud.gif);
+    background-image: url(cloud.gif),linear-gradient(rgba(0, 0, 0, 0.699), rgba(66, 4, 4, 0.582));
     background-position: center;
     background-size: cover;
+    background-blend-mode: overlay;
 }
 
 .form {
@@ -36,7 +37,7 @@
 
 #head-title {
     font-size: 30px;
-    color: #5d728d;
+    color: #1070ee;
     text-align: center;
 }
 
@@ -46,6 +47,14 @@
     max-width: 310px;
     border-bottom: 2px solid #fff;
     
+}
+
+.ion-icon {
+    margin: px;
+    padding: 5px;
+    margin-top: 35px;
+    position: absolute;
+    color: #fff;
 }
 
 .inputbox label {
@@ -80,7 +89,7 @@ input:valid ~ label {
 .inputbox ion-icon {
     position: absolute;
     right: 8px;
-    color:#fff;
+    color: #1070ee;
     font-size: 1.2rem;
     top: 20px;
 }
@@ -103,14 +112,14 @@ input:valid ~ label {
 }
 
 .forget a {
-    color: #fff;
+    color: blue;
     text-decoration: none;
     font-weight: 600;
 }
 
 .forget a:hover {
     text-decoration: underline;
-    color: #318299;
+    color: #010b0e;
 }
 
 .Login {
@@ -129,6 +138,9 @@ input:valid ~ label {
 
 button:hover {
     background-color: rgb(255, 255, 255, 0.5);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    transform: scale(1.09);
+    transition: box-shadow 0.2s ease-in-out;
 }
 .Register{
     font-size: 0.9rem;
