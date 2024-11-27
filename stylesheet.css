@@ -16,7 +16,7 @@
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background-image: url(cloud.gif),linear-gradient(rgba(0, 0, 0, 0.699), rgba(66, 4, 4, 0.582));
+    background-image: url(zenith.jpeg),linear-gradient(rgba(0, 0, 0, 0.699), rgba(66, 4, 4, 0.582));
     background-position: center;
     background-size: cover;
     background-blend-mode: overlay;
