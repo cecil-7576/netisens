@@ -11,6 +11,7 @@ document.write ("Hello World");
 
 function saySomething () {
 // All Statements goes inside the curly braces 
+
 alert ("This is a function");
             }
 
@@ -38,4 +39,6 @@ function addSomething (num,str) {
     var number1 = number1 + number2;
 
     document.write (number1);
+
+   
 
