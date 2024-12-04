@@ -5,9 +5,21 @@
     <title>HEllo World Java</title>
 </head>
 <body>
-    <h1>JS for Beginners</h1>
-    <div id="content">
-        <p>blah blah blah</p>
+    <h1 id="title">JS for Beginners</h1>
+    <p id="demo">Welcome to first Day in Class</p>
+
+    <button type="button" onclick="document.getElementById ('demo').innerHTML='Netizens JavaScript Class'">Click</button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <button onclick="document.getElementById ('title').innerHTML='We good to go'">JavaScript Magic</button>
+
+    <div style="margin-top: 30px; padding: 10px; margin-bottom: 10px;">
+        <button onclick="document.getElementById('myImage').src='netflix.png'">Movie House</button>
+
+        <img id="myImage" src="netflix.png" width="200px" alt="netflix logo">
+
+        <button onclick="document.getElementById('myImage').src='x-icon.png'">Social Space</button>
+    </div>
+
+    <p>blah blah blah</p>
     </div>
 
     <div class="house">
