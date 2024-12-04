@@ -20,3 +20,9 @@ if (withdrawal <= balance) {
 } else {
     console.log('insuficient funds !!!');
 }   
+
+let myVariableShun;
+myVariableShun = 10;
+let myVar2 = "hello";
+myVar2 = "hello"
+
