@@ -1,7 +1,3 @@
-// first alert 
-alert("Hello World");
-//this is second alert How to write a comment 
-alert("How are you");
 
 let myName = "Byran";
 let myAge = 16; //Replace with your age
@@ -13,7 +9,7 @@ if (myAge >= 18) {
 }
 
 let balance = 10000;
-let withdrawal = 5000;
+let withdrawal = 15000;
 
 if (withdrawal <= balance) {
     console.log('Transaction successful');
