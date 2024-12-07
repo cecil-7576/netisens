@@ -1,4 +1,5 @@
 
+document.write('Hello world');
 let myName = "Byran";
 let myAge = 16; //Replace with your age
 
@@ -17,8 +18,28 @@ if (withdrawal <= balance) {
     console.log('insuficient funds !!!');
 }   
 
-let myVariableShun;
-myVariableShun = 10;
-let myVar2 = "hello";
-myVar2 = "hello"
+let name = "Ebube";
+let email = "pharm.cecil@gmail.com";
+let age = 30;
 
+let phone = "07067384367";
+
+console.log(`Name: ${name} 
+    \nEmail: ${email} 
+    \nAge: ${age} 
+    \nPhone Number: ${phone}`);
+    
+    function saySomeThing() {
+        console.log("function are always called upon")
+    }
+    saySomeThing()
+    
+    let tt = 5 >= 3;
+    let ft = 5 !== 3;
+    let mm = 5 <= 3;
+
+    console.log(`Tt: ${tt} \nFt: ${ft} \nMm: ${mm}`);
+
+    for (let i = 1; i < 10; i++){
+        console.log("The number is " + i + "<br>")
+    }
