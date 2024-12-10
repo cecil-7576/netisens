@@ -22,7 +22,7 @@ let name = "Ebube";
 let email = "pharm.cecil@gmail.com";
 let age = 30;
 
-let phone = "07067384367";
+const phone = "07067384367";
 
 console.log(`Name: ${name} 
     \nEmail: ${email} 
@@ -43,3 +43,59 @@ console.log(`Name: ${name}
     for (let i = 1; i < 10; i++){
         console.log("The number is " + i + "<br>")
     }
+
+    let iLikeMeat = true;
+    let iLikeFish = false;
+
+    console.log(`male: ${iLikeMeat} \nfemale: ${iLikeFish}`);
+
+    var youLIkeMeat = true;
+    var myNum = 10;
+
+    if  (myNum ==10) {
+        document.write(" ,Yes i like meat..")
+    } else {
+        document.write(" ,No im a vegetarian")
+    }
+
+    let myGap = 29;
+
+    if (myGap>=30) {
+
+        console.log("You are over 30");
+    } else {
+        console.log("you are below 30")
+    }
+
+    let hisName = 'Mosh';
+    let hisAge = 30;
+    let isApproved = false;
+    let hisFirstName = undefined;
+    let allowedColor = null;
+
+    let person = {
+        name: 'Mosh',
+        age: 30,
+    }
+
+    // Dot Notation 
+    person.name = 'John';
+    person.age = 31;
+
+    /*Bracket Notation */
+    person ['name'] = 'Mary';
+
+    console.log(person)
+
+    let selectedColor = ['red', 'blue','3', 'white'];
+    selectedColor[4] = 'orange';
+    selectedColor[5] = 'brown';
+    console.log(selectedColor);
+
+    let human = {
+        name: 'Cecilia',
+        age: 25,
+    }
+
+    console.log('Hello, ' + name);
+
