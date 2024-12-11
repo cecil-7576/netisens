@@ -1,7 +1,7 @@
 
 document.write('Hello world');
 let myName = "Byran";
-let myAge = 16; //Replace with your age
+let myAge = 20; //Replace with your age
 
 if (myAge >= 18) {
     console.log(myName + ", you are eligible to vote.");
@@ -9,7 +9,7 @@ if (myAge >= 18) {
     console.log(myName + ", you are not eligible to vote.");
 }
 
-let balance = 10000;
+let balance = 100000;
 let withdrawal = 15000;
 
 if (withdrawal <= balance) {
@@ -98,4 +98,10 @@ console.log(`Name: ${name}
     }
 
     console.log('Hello, ' + name);
+
+    let firstName = 'Virgil';
+    let SecondName = 'Chidubem';
+    const surName = 'Ihezuru';
+
+    console.log(`First Name: ${firstName} \nSecond Name: ${SecondName} \nSur-Name: ${surName}`);
 
