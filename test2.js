@@ -66,6 +66,7 @@ console.log(`Name: ${name}
     } else {
         console.log("you are below 30")
     }
+    // types of Primitives data
 
     let hisName = 'Mosh';
     let hisAge = 30;
@@ -73,19 +74,24 @@ console.log(`Name: ${name}
     let hisFirstName = undefined;
     let allowedColor = null;
 
+    // null primitive data gives rise or results to non primitive or relative data
+
+    // my first Obeject data
     let person = {
         name: 'Mosh',
         age: 30,
     }
 
-    // Dot Notation 
+    // Dot Notation to make corrections 
     person.name = 'John';
-    person.age = 31;
-
+    person.age = 31; 
+    
     /*Bracket Notation */
     person ['name'] = 'Mary';
 
     console.log(person)
+    
+    // My first Array data
 
     let selectedColor = ['red', 'blue','3', 'white'];
     selectedColor[4] = 'orange';
@@ -103,5 +109,24 @@ console.log(`Name: ${name}
     let SecondName = 'Chidubem';
     const surName = 'Ihezuru';
 
-    console.log(`First Name: ${firstName} \nSecond Name: ${SecondName} \nSur-Name: ${surName}`);
+    console.log(`First Name: ${firstName} \nSecond Name: ${SecondName} \nSur-Name: ${surName}`); 
 
+    for (let i = 0; i < 100; i+=2) {
+        console.log(i)
+    }
+
+    const num = []
+    for (let i =1; i <= 100; i+= 2) {
+        num.push(i)
+    }
+    console.log(num)
+
+
+    const pinCode = []
+    for (let i = 0; i <= 999; i++) {
+        let pin = i.toString().padStart(3, '0')
+        pinCode.push(pin)
+    }
+    console.log(pinCode)
+    pinCode['004'] = 'white';
+    
