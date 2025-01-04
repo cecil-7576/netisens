@@ -5,12 +5,13 @@
 }
 
 .body1 {
-    background-color: rgba(100, 98, 98, 0.411);
+    background-color: rgba(189, 179, 179, 0.411);
     padding: 20px;
-    border: 1px, solid;
+    border: 1px, solid white;
     width: 30%;
     margin: 400px;
-    margin-top: 50px;
+    margin-top: 40px;
+    height: 321px;
 }   
 
 h1 {
@@ -18,11 +19,13 @@ h1 {
     text-align: center;
 }
 
-.cta-button {
+.cta {
 padding: 3px;
 width: 83%;
 color: white;
 background-color: black;
+border-radius: 3px;
+height: 30px;
 }
 
 label {
@@ -40,4 +43,18 @@ input {
     margin: 5px;
     width: 80%;
     font-size: large;
+}
+
+ul {
+    list-style: none;
+    position: relative;
+    display: block;
+    margin: -26px;
+    padding-left: 3px;
+    padding-top: 40px;
+}
+
+.item {
+    width: 152%;
+    border: 3px solid white;
 }
