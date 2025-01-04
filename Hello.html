@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8" />
     <title>HEllo World Java</title>
+    <link rel="stylesheet" href="stylesheetjs.css">
 </head>
 <body>
-    <h1 id="title">JS for Beginners</h1>
-    <p id="demo">Welcome to first Day in Class</p>
+    <h1 id="title" style="color: whitesmoke; text-shadow: 0px 0px 10px red, 0px 0px 20px red, 0px 0px 40px red, 0px 0px 80px red; background-color: mintcream; width: 300px;">JS for Beginners &#8482</h1>
+    <p id="demo" style="font-size: larger;">Welcome to first Day in Class</p>
 
     <button onclick="document.getElementById('demo').innerHTML='Netizens JavaScript Class'">Click</button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <button onclick="document.getElementById ('title').innerHTML='We good to go'">JavaScript Magic</button>
@@ -29,6 +30,31 @@
     <div class="house">
 
     </div>
+
+    <div>
+        <h3 style="border: 2px solid black; width: 30px; background-color: blue; color: white; text-align: center; border-radius: 50%;">T</h3>
+    </div>
+
+    <section class="body1">
+        <form id="my-form">
+        <div>
+            <h1>Add User</h1>
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" >
+            </div>
+            <br>
+            <div>
+                <label for="email">Email:</label>
+                <input type="text" id="email" >
+            </div>
+            <br>
+            <div>
+                <button class="cta-button">Submit</button>
+            </div>
+        </div>
+        </form>
+    </section>
 
     <script src="test2.js"></script>
 </body>
