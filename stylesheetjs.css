@@ -1,0 +1,43 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.body1 {
+    background-color: rgba(100, 98, 98, 0.411);
+    padding: 20px;
+    border: 1px, solid;
+    width: 30%;
+    margin: 400px;
+    margin-top: 50px;
+}   
+
+h1 {
+    padding-bottom: 25px;
+    text-align: center;
+}
+
+.cta-button {
+padding: 3px;
+width: 83%;
+color: white;
+background-color: black;
+}
+
+label {
+    position: absolute;
+    margin: -18px;
+    margin-left: 1px;
+}
+
+#my-form {
+    margin: 5px;
+    padding-inline: 10px;
+}
+
+input {
+    margin: 5px;
+    width: 80%;
+    font-size: large;
+}
