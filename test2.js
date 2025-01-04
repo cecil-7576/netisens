@@ -507,8 +507,29 @@ console.log(window);// parent object of the browser
 // Single elements selectors
 const form= document.getElementById('my-form');
 console.log(form);
-console.log(document.querySelector('.body1'));
+let section= document.querySelector('.body1');
+console.log(section)
 
 
 //Multiple elements selectors
-console.log(document.querySelectorAll('h1'));
+console.log(document.querySelectorAll('.item'));
+console.log(document.getElementsByClassName('item'));
+
+const items = document.querySelectorAll('item'); // high order array
+items.forEach((item) =>{
+    console.log(item);
+})
+
+const ul = document.querySelector('.items');
+//ul.remove();
+//ul.lastElementChild.remove();
+/*ul.firstElementChild.textContent = 'Hello';
+ul.children[1].innerText = 'Cecil';
+ul.lastElementChild.innerHTML = '<h4>Virgil<h4>';*/
+
+const cta =document.querySelector('.cta');
+
+cta.addEventListener('click', (e) =>{
+    e.preventDefault();
+    console.log(e.target.className);
+});
