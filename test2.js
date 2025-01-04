@@ -250,7 +250,7 @@ const manJSON = JSON.stringify(man);
 console.log(manJSON);
 
 // for loop
-for (let p = 2; p < 6; p++) {
+for (let p = 2; p < 6; p+=2) {
     console.log('For loop number: ' + p);
 }
 
@@ -391,16 +391,12 @@ function Person(tribeNAme, engNAme, dob) {
     
 }
 
-function aBoy(){
-    return 'paul is older than peter';
-}
- console.log(aBoy());
 // Instantiate object with the constuctor object 
 const person1 = new Person('Cecil', 'Ihez', '10-6-1989');
 const person2 = new Person('onye', 'Ihez', '18-10-1970');
 
 console.log(person1.getBirthYear());
-
+console.table(person1);
 todos.forEach((iphone)=>{
     console.log(iphone.text);
 })
@@ -487,7 +483,7 @@ class Wife {
         this.wifeAge= new Date(wifeAge);
         this.wifeJob= wifeJob;
     }    
-    getBirthYear=()=>{
+    getBirthYear = function () {
         return `${this.wifeAge}`;
     }
 
