@@ -509,6 +509,9 @@ const form= document.getElementById('my-form');
 console.log(form);
 let section= document.querySelector('.body1');
 console.log(section)
+var title = document.querySelector('title');
+console.log(title);
+
 
 
 //Multiple elements selectors
@@ -516,10 +519,14 @@ console.log(document.querySelectorAll('.item'));
 console.log(document.getElementsByClassName('item'));
 
 const items = document.querySelectorAll('item'); // high order array
-items.forEach((item) =>{
+items.forEach(function(item){
     console.log(item);
 })
 
+const item = item.filter(function(item){
+    return item==item
+})
+console.log(item);
 const ul = document.querySelector('.items');
 //ul.remove();
 //ul.lastElementChild.remove();
