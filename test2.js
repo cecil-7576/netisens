@@ -538,5 +538,7 @@ const cta =document.querySelector('.cta');
 cta.style.background = 'brown';
 cta.addEventListener('click', (function(e){
     e.preventDefault();
-    console.log('click');
-}))
+    console.log(e);
+})) 
+
+console.log()
