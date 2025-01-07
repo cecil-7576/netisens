@@ -520,23 +520,23 @@ console.log(document.getElementsByClassName('item'));
 
 const items = document.querySelectorAll('item'); // high order array
 items.forEach(function(item){
-    console.log(item);
+console.log(item);
 })
 
-const item = item.filter(function(item){
-    return item==item
-})
-console.log(item);
 const ul = document.querySelector('.items');
 //ul.remove();
 //ul.lastElementChild.remove();
-/*ul.firstElementChild.textContent = 'Hello';
+ul.children[0].textContent = 'Ebube'; //or ul.firstElementChild.textcontent = 'Ebube';
 ul.children[1].innerText = 'Cecil';
-ul.lastElementChild.innerHTML = '<h4>Virgil<h4>';*/
+ul.lastElementChild.innerHTML = '<h4>Virgil<h4>';
+const li = document.querySelector('.item');
+li.style.background = 'red';
+
 
 const cta =document.querySelector('.cta');
 
-cta.addEventListener('click', (e) =>{
+cta.style.background = 'brown';
+cta.addEventListener('click', (function(e){
     e.preventDefault();
-    console.log(e.target.className);
-});
+    console.log('click');
+}))
