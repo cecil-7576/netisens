@@ -531,12 +531,38 @@ ul.children[1].innerText = 'Cecil';
 ul.lastElementChild.innerHTML = '<h4>Virgil<h4>';
 const li = document.querySelector('.item');
 li.style.background = 'red';
-
-
 const cta =document.querySelector('.cta');
 
 cta.style.background = 'brown';
-cta.addEventListener('click', (function(e){
-    e.preventDefaul();
-    console.log(e.target);
-}));
+
+cta.addEventListener('mouseover', (function(e){
+    e.preventDefault();
+    document.querySelector('#my-form').style.background = 'blue';
+    document.querySelector('.items').lastElementChild.innerHTML =
+    '<h4>Cecil loves You</h4>';
+}))
+
+/*cta.addEventListener('click', (function(e){
+    e.preventDefault();
+    document.querySelector('#my-form').style.background = 'grey';
+    document.querySelector('.items').lastElementChild.innerHTML = '<h4>Love You</h4>';
+}))*/
+
+const colors = ['red', 'blue', 'green', 'pink', 'yellow',];
+console.log(colors);
+colors.push = 'brown';
+console.log(colors);
+colors.shift =('');
+console.log(colors);
+colors.unshift = ('orange');
+console.log(colors.indexOf('pink'));
+
+const joined = ['rainbow', 'colors'];
+console.log(joined.join(' '));
+const sentence = (joined.join(' '));
+console.log(sentence);
+console.log(sentence.split(','));
+console.log(sentence.toUpperCase())
+
+
+
