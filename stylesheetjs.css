@@ -5,7 +5,8 @@
 }
 
 .body1 {
-    background-color: rgba(189, 179, 179, 0.411);
+    background-color:rgb(1, 13, 32);
+    color: white;
     padding: 20px;
     border: 1px, solid white;
     width: 30%;
@@ -37,6 +38,7 @@ label {
 #my-form {
     margin: 5px;
     padding-inline: 10px;
+    border-radius: 10px;
 }
 
 input {
