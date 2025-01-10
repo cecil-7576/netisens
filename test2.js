@@ -39,7 +39,7 @@ console.log(`Name: ${name}
         function saySomeThing() {
         return "JavaScript";
     }
-    console.log(saySomeThing());
+    console.log(saySomeThing('JavaScript'));
     
     let tt = 5 >= 3;
     let ft = 5 !== 3;
@@ -105,8 +105,8 @@ console.log(`Name: ${name}
     // My first Array data
 
     const selectedColor = ['red', 'blue','3', 'white'];
-    selectedColor.push = 'orange';
-    selectedColor.unshift = 'brown';
+    selectedColor.push('orange');
+    selectedColor.unshift('brown');
     selectedColor.pop()
     console.log(selectedColor);
 
@@ -126,6 +126,7 @@ console.log(`Name: ${name}
     console.log(name.toUpperCase());
     console.log(name.toLowerCase());
     console.log(name.substring(0, 5).toUpperCase());
+    console.log(name.split(','));
     console.log(name.split(''));
 
     let firstName = 'Virgil';
@@ -133,7 +134,7 @@ console.log(`Name: ${name}
     const surName = 'Ihezuru';
 
     console.log(`First Name: ${firstName} \nSecond Name: ${secondName} \nSur-Name: ${surName}`); 
-    console.log(surName.split(''));
+    console.log(surName.split(','));
     console.log('First Name:' +firstName)
     console.log('Second Name:' +secondName)
     for (let i = 0; i < 10; i+=2) {
@@ -180,7 +181,7 @@ console.log(s.toUpperCase());
 console.log(s.length);
 console.log(s.toLowerCase());
 console.log(s.substring(0, 5).toUpperCase());
-console.log(s.split(''));
+console.log(s.split(','));
 console.log(typeof s);
 
 const v = ('technology, computer, it, code');
@@ -192,7 +193,7 @@ console.log(v.split(','));
 const fruits = ['apples', 'mangoes', 'oranges'];
 console.log(fruits[1]);
 fruits[3]= 'grapes';
-console.log(fruits)
+console.log(fruits);
 fruits.push('water melon');
 console.log(fruits);
 fruits.unshift('pear')
@@ -200,6 +201,7 @@ console.log(fruits);
 fruits.pop();
 console.log(fruits);
 console.log(Array.isArray(fruits));
+console.log(fruits.includes('yam'));
 console.log(fruits.indexOf('mangoes'));
 
 // this is an Object non-primitive data
@@ -361,7 +363,6 @@ switch(colour) {
 }
 console.log(colour);
 
-
 // function non-primitive data 
 function nums (num1, num2) {
     return num1 + num2;
@@ -381,6 +382,29 @@ todos.forEach(function(tony){
 
 // Object oriented programming 
 // using Constructor function
+class Kingdom {
+    constructor (imo, akwaIbom, crossrivers) {
+        this.imo = imo;
+        this.akwaIbom = akwaIbom;
+        this.crossrivers = crossrivers;
+    }
+    getAkwaIbom (){
+        return this.akwaIbom;
+    }
+    getImo() {
+        return this.imo;
+    }
+
+}
+
+const kingdom= new Kingdom('ama','abak','ugep');
+console.log(kingdom);
+console.log(kingdom.akwaIbom);
+console.log(kingdom.imo);
+
+
+
+
 function Person(tribeNAme, engNAme, dob) {
     this.tribeNAme = tribeNAme;
     this.engNAme = engNAme;
@@ -492,6 +516,8 @@ class Wife {
     }
 
 }
+const kingdomJSON= JSON.stringify(kingdom);
+console.table(kingdomJSON);
 
 
 const Lady= new Wife('Chidubem', '33', 'Fire service');
@@ -531,12 +557,45 @@ ul.children[1].innerText = 'Cecil';
 ul.lastElementChild.innerHTML = '<h4>Virgil<h4>';
 const li = document.querySelector('.item');
 li.style.background = 'red';
-
-
 const cta =document.querySelector('.cta');
 
 cta.style.background = 'brown';
+<<<<<<< HEAD
 cta.addEventListener('click', (function(e){
     e.preventDefaul();
     console.log('click');
 }))
+=======
+
+cta.addEventListener('mouseover', (function(e){
+    e.preventDefault();
+    document.querySelector('#my-form').style.background = 'skyblue';
+    document.querySelector('.items').lastElementChild.innerHTML =
+    '<h4>Cecil loves You</h4>';
+}))
+
+/*cta.addEventListener('click', (function(e){
+    e.preventDefault();
+    document.querySelector('#my-form').style.background = 'grey';
+    document.querySelector('.items').lastElementChild.innerHTML = '<h4>Love You</h4>';
+}))*/
+
+const colors = ['red', 'blue', 'green', 'pink', 'yellow',];
+console.log(colors);
+colors.push = 'brown';
+console.log(colors);
+colors.shift =('');
+console.log(colors);
+colors.unshift = ('orange');
+console.log(colors.indexOf('pink'));
+
+const joined = ['rainbow', 'colors'];
+console.log(joined.join(' '));
+const sentence = (joined.join(' '));
+console.log(sentence);
+console.log(sentence.split(','));
+console.log(sentence.toUpperCase())
+
+
+
+>>>>>>> 30955fc2da86de25452d496393e7eff52c91a0d4
