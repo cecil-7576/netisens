@@ -551,8 +551,14 @@ console.log(item);
 
 const ul = document.querySelector('.items');
 //ul.remove();
+//ul.firstElementChild.textContent = 'Hello';
+//ul.children[0].textContent = ('Hellooo');
+//ul.children[1].textContent = ('Virgil');
+//ul.lastElementChild.innerHTML = ('V & C')
+
+
 //ul.lastElementChild.remove();
-ul.children[0].textContent = 'Ebube'; //or ul.firstElementChild.textcontent = 'Ebube';
+/*ul.children[0].textContent = 'Ebube'; //or ul.firstElementChild.textcontent = 'Ebube';
 ul.children[1].innerText = 'Cecil';
 ul.lastElementChild.innerHTML = '<h4>Virgil<h4>';
 const li = document.querySelector('.item');
@@ -561,7 +567,7 @@ const cta =document.querySelector('.cta');
 
 cta.style.background = 'brown';
 
-cta.addEventListener('mouseover', (function(e){
+cta.addEventListener('mouseout', (function(e){
     e.preventDefault();
     document.querySelector('#my-form').style.background = 'skyblue';
     document.querySelector('.items').lastElementChild.innerHTML =
@@ -576,12 +582,14 @@ cta.addEventListener('mouseover', (function(e){
 
 const colors = ['red', 'blue', 'green', 'pink', 'yellow',];
 console.log(colors);
-colors.push = 'brown';
+colors.push('brown');
 console.log(colors);
-colors.shift =('');
+colors.shift('');
 console.log(colors);
-colors.unshift = ('orange');
+colors.unshift('orange');
+console.log(colors);
 console.log(colors.indexOf('pink'));
+console.log(colors.includes('white'))
 
 const joined = ['rainbow', 'colors'];
 console.log(joined.join(' '));
@@ -589,6 +597,95 @@ const sentence = (joined.join(' '));
 console.log(sentence);
 console.log(sentence.split(','));
 console.log(sentence.toUpperCase())
+
+const course = ['Cyber Security','Wed Development','Data Analysis','UI/UX','Data Science','Sofeware Engineering','Mobile Development'];
+console.log(course);
+
+let newCourses = ['Artificial Intelligence', 'Blockchain','Machine Learning','computer Vision','Natural Language Processing','Quantum Computing','Blockchain Development','Biology']
+
+
+course.push(...newCourses);
+console.log(course);
+
+course.pop('');
+console.log(course);
+course.unshift('Graphic Design');
+console.log(course);
+
+const greeting = ['Welcome ', 'to ', 'Netisens ', 'ICT'];
+console.log(greeting);
+
+console.log(greeting.join(''));
+
+const coursesByLength = course.sort((a,b)=>{
+    return b.length - a.length;
+})
+console.log(coursesByLength)
+
+/*const cta = document.querySelector('.cta');
+
+
+cta.style.background = ('blue');
+
+cta.addEventListener('mouseover', (function(e){
+    e.preventDefault();
+    document.querySelector('#my-form').style.background = 'skyblue'
+    document.querySelector('.items').children[2].innerHTML = 'Love Together'
+}));*/
+
+const myform = document.querySelector('#my-form');
+const nameImput = document.querySelector('#name');
+const emailImput = document.querySelector('#email');
+const msg = document.querySelector('.msg');
+const usersList = document.querySelector('#users');
+
+myform.style.background = '#eab725';
+myform.addEventListener('submit', onsubmit);
+
+function onsubmit(e) {
+    e.preventDefault();
+    //console.log(nameImput.value);
+
+    if (nameImput.value === '' || emailImput.value === '') {
+        //alert('Your informations please');
+        msg.classList.add('error');
+        msg.textContent = ('Your informations please')
+         setTimeout (()=>msg.remove(), 3000);
+    } else {
+        console.log('successful')
+    }
+}
+
+/*myform.addEventListener('submit', onsumbit);
+
+function onsumbit(e){
+    e.preventDefault();
+
+    //console.log(nameImput.value); texting the command 
+
+    if (nameImput.value === '' || emailImput.value === '') {
+        alert('please fill in your informations');
+       // msg.classList.add('error');
+        //msg.innerHTML = 'Please fill in your informations';
+
+        setTimeout (()=> msg.remove(), 3000);
+    } else{
+        //console.log('success'); // a form validation
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode(`${nameImput.value} : ${emailImput.value}`));
+
+        usersList.appendChild(li);
+
+        //clear fields
+        nameImput.value = '';
+        emailImput.value = '';
+
+    }
+}
+    */
+
+
+
 
 
 
