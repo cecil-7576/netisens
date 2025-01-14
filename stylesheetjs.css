@@ -5,8 +5,8 @@
 }
 
 .body1 {
-    background-color:rgb(1, 13, 32);
-    color: white;
+    background-color:#e58b36;
+    color: #e3693f;
     padding: 20px;
     border: 1px, solid white;
     width: 30%;
@@ -24,7 +24,7 @@ h1 {
 padding: 3px;
 width: 83%;
 color: white;
-background-color: black;
+background-color: #936548;
 border-radius: 3px;
 height: 30px;
 }
@@ -38,7 +38,7 @@ label {
 #my-form {
     margin: 5px;
     padding-inline: 10px;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 input {
@@ -59,4 +59,25 @@ ul {
 .item {
     width: 99%;
     border: 3px solid white;
+    margin: 20px;
+    padding-left: 20px;
+}
+
+.msg{
+    margin-bottom: 20px;
+}
+
+.error{
+    background: red;
+    color: #fff;
+    padding: 3px;
+    border: 2px solid seagreen;
+    width: 80%;
+    border-radius: 10px;
+    text-align: center;
+}
+
+li{
+    padding-left: 20px;
+
 }
