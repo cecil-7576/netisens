@@ -566,6 +566,12 @@ li.style.background = 'red';
 const cta =document.querySelector('.cta');
 
 cta.style.background = 'brown';
+<<<<<<< HEAD
+cta.addEventListener('click', (function(e){
+    e.preventDefaul();
+    console.log('click');
+}))
+=======
 
 cta.addEventListener('mouseout', (function(e){
     e.preventDefault();
@@ -689,3 +695,4 @@ function onsumbit(e){
 
 
 
+>>>>>>> 30955fc2da86de25452d496393e7eff52c91a0d4
