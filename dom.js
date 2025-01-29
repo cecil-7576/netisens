@@ -120,4 +120,4 @@ for (var i=0; i < odd.length; i++){
 //console.log(itemList.children)
 
 let box = document.getElementById('box');
-console.log(box);
+box.style.backgroundColor = "blue";
