@@ -1,9 +1,10 @@
-
+// var ; let ; const 
 document.write('Hello world');
 var myName = "Byran";
 var myAge = 17.5; //Replace with your age
 
-if (myAge >= 18) {
+// an if statement 
+if (myAge >= 18) { 
     console.log(myName + ", you are eligible to vote.");
 } else {
     console.log(`${myName}, you are not eligible to vote.`);
@@ -36,10 +37,13 @@ console.log(`Name: ${name}
         ', Phone Number : ' + phone + '.');
     
     
-        function saySomeThing() {
+    function saySomeThing() {
         return "JavaScript";
     }
     console.log(saySomeThing('JavaScript'));
+
+    const someThing = () => 'JavaScript'; 
+    console.log(someThing('JavaScript'));
     
     let tt = 5 >= 3;
     let ft = 5 !== 3;
@@ -106,9 +110,24 @@ console.log(`Name: ${name}
 
     const selectedColor = ['red', 'blue','3', 'white'];
     selectedColor.push('orange');
+    selectedColor.shift()
+    console.log(selectedColor)
     selectedColor.unshift('brown');
     selectedColor.pop()
+    console.log(selectedColor.indexOf('brown'));
+    console.log(selectedColor.includes('red'));
+    console.table(selectedColor.join(','));
+    
+    selectedColor.sort(function(a,b){
+        return a.length-b.length
+    })
+
     console.log(selectedColor);
+
+    const sortSelectedColorAlphabet = function sort(selectedColor) {
+        return selectedColor.sort((a,b)=> a.localeCompare(b));
+    }
+    console.log(sortSelectedColorAlphabet(selectedColor))
 
     const selectedColorJSON = JSON.stringify(selectedColor);
     console.log(selectedColorJSON);
@@ -165,15 +184,17 @@ console.log(typeof age)
 console.log(typeof allowedColor)
 console.log(typeof isApproved)
 
-const car = 'Toyota';
-const leg = 4;
-
+const car = {
+    name : 'Toyota', 
+    leg : 4,
+}
+console.log(car);
 // Concatenation 
-console.log('This is a '+ car +' and it has a '+ leg +' wheel drive');
+/*console.log('This is a '+ name +' and it has a '+ leg +' wheel drive');
 console.log(`This is a ${car} and it has a ${leg} wheel drive`)
 
 console.log(car + ' is a very multipurpose vehicle ' + car + ' is a  ' + leg + ' wheel drive.'); 
-console.log(`${car} is a very multipurpose vehicle ${car} is a ${leg} wheel drive.`)
+console.log(`${car} is a very multipurpose vehicle ${car} is a ${leg} wheel drive.`)*/
 
 const s = 'Hello world';
 
@@ -238,6 +259,42 @@ const todos = [
     isCompleted: false
 },
 ];
+ 
+/*const brands = [
+    {
+        tag: 'Gucci',
+        org: 'Italy',
+        collection: 1,
+    },
+    {
+        tag: 'Addidas',
+        org: 'Germany',
+        collection: 2,
+    },
+    {
+        tag: 'UnderAmor',
+        org: 'Bristh',
+        collection: 3,
+    }
+]
+
+console.log(brands[1].tag);
+//const brandsJSON = JSON.stringify(brands);
+//console.log(brandsJSON);
+
+for (let b = 0; b < brands.length; b++) {
+    console.log(brands[b].org);
+}
+
+let ds = 0;
+while (ds < brands.length) {
+    console.log(brands[ds].tag)
+    ds++
+}
+
+for (let dap of brands){
+    console.log(dap.tag);
+}*/
 
 console.table(todos);
 console.log(todos[2].text);
@@ -281,10 +338,6 @@ while (j < todos.length) {
     j++;
 }
 
-for (let data of todos) {
-    console.log(data.text);
-}
-
 //high order Array methods
 // forEach, map, filter
 
@@ -292,9 +345,9 @@ const pam = todos.filter((todos) =>{
     return todos.id 
 })
 console.log(pam)
-todos.forEach(function(naeto){
-    console.log(naeto.text);
-});
+
+todos.forEach((naeto)=>console.log(naeto.text));
+
 todos.forEach(function(Ify){
     console.log(Ify.id)
 })
@@ -326,7 +379,7 @@ console.log(marpJSON);
 
 const x = 20;
 
-if(x === 20) {
+if(x === 10) {
     console.log('x is 10');
 } else if(x < 10) {
     console.log('x is greater than 10');
@@ -363,23 +416,36 @@ switch(colour) {
 }
 console.log(colour);
 
-// function non-primitive data 
+// function non-primitive data block of codes design to perform specific task 
+
 function nums (num1, num2) {
     return num1 + num2;
 }
 console.log(nums(4,5));
 
 // Arrow function 
-const addNum = (num, num2) => {
-    return num - num2
-}
+const addNum = (num, num2) =>num - num2
 console.log(addNum(10,4));
 
 todos.forEach((tony) => console.log(tony.isCompleted));
 todos.forEach(function(tony){
     console.log(tony)
 })
+class Design {
+    constructor(spain, usa, nigeria) {
+        this.spain= spain;
+        this.usa= usa;
+        this.nigeria= nigeria;
+    }    
+        getUsa(){
+            return `${this.usa}`;
+        }
+}
 
+
+const clothing = new Design('Gucci','Next', 'Adidas');
+console.log(clothing);
+console.log(clothing.getUsa())
 // Object oriented programming 
 // using Constructor function
 class Kingdom {
@@ -551,13 +617,14 @@ console.log(item);
 
 const ul = document.querySelector('.items');
 //ul.remove();
-//ul.firstElementChild.textContent = 'Hello';
-//ul.children[0].textContent = ('Hellooo');
-//ul.children[1].textContent = ('Virgil');
-//ul.lastElementChild.innerHTML = ('V & C')
+ul.firstElementChild.textContent = 'Hello';
+ul.children[0].textContent = ('Hellooo');
+ul.children[1].textContent = ('Virgil');
+ul.lastElementChild.innerHTML = ('V & C')
 
 
 //ul.lastElementChild.remove();
+
 /*ul.children[0].textContent = 'Ebube'; //or ul.firstElementChild.textcontent = 'Ebube';
 ul.children[1].innerText = 'Cecil';
 ul.lastElementChild.innerHTML = '<h4>Virgil<h4>';
@@ -566,12 +633,11 @@ li.style.background = 'red';
 const cta =document.querySelector('.cta');
 
 cta.style.background = 'brown';
-<<<<<<< HEAD
+
 cta.addEventListener('click', (function(e){
     e.preventDefaul();
     console.log('click');
 }))
-=======
 
 cta.addEventListener('mouseout', (function(e){
     e.preventDefault();
@@ -604,6 +670,9 @@ console.log(sentence);
 console.log(sentence.split(','));
 console.log(sentence.toUpperCase())
 
+const ride = ['mecedes', 'benz']
+console.log(ride.join(' '));
+
 const course = ['Cyber Security','Wed Development','Data Analysis','UI/UX','Data Science','Sofeware Engineering','Mobile Development'];
 console.log(course);
 
@@ -623,21 +692,32 @@ console.log(greeting);
 
 console.log(greeting.join(''));
 
-const coursesByLength = course.sort((a,b)=>{
-    return b.length - a.length;
+const coursesByLength = course.sort((a,b)=>b.length - a.length)
+console.log(coursesByLength);
+
+const coursesLength = course.sort(function(a,b){
+    return b.length - a.length 
 })
-console.log(coursesByLength)
+console.log(coursesLength); 
 
-/*const cta = document.querySelector('.cta');
+function sortCourseAlphabetic (course) {
+    return course.sort(function(a,b) {
+        return a.localeCompare(b) 
+    } 
+)} 
+console.log(sortCourseAlphabetic(course));
+
+const cta = document.querySelector('.cta');
 
 
-cta.style.background = ('blue');
+
+cta.style.background = 'green';
 
 cta.addEventListener('mouseover', (function(e){
     e.preventDefault();
     document.querySelector('#my-form').style.background = 'skyblue'
-    document.querySelector('.items').children[2].innerHTML = 'Love Together'
-}));*/
+    //document.querySelector('.items').children[2].innerHTML = 'Love Together'
+}));
 
 const myform = document.querySelector('#my-form');
 const nameImput = document.querySelector('#name');
@@ -656,14 +736,16 @@ function onsubmit(e) {
         //alert('Your informations please');
         msg.classList.add('error');
         msg.textContent = ('Your informations please')
-         setTimeout (()=>msg.remove(), 3000);
+         setTimeout (() =>msg.remove(), 2000);
     } else {
         console.log('successful')
     }
 }
 
 /*myform.addEventListener('submit', onsumbit);
-
+//  for (let i = 1; 1 < 10; 1+=2) {
+            console.log("")
+    }  
 function onsumbit(e){
     e.preventDefault();
 
@@ -689,10 +771,105 @@ function onsumbit(e){
     }
 }
     */
+const twenty = []
+for (let c = 1; c < 21; c++) {
+    twenty.push(c);
+}
+console.log(twenty);
+
+function Even(number) {
+    if (number % 2===0){
+        return (`Even`);
+    }else {
+        return (`odd`);
+    }
+}
+console.log(Even('2'));
+console.log(Even('3'));
+
+function number (n) {
+    let sum = 0;
+    for (let i = 0; i < n; i++) {
+        sum += i;
+    }
+    return sum;
+} 
+console.log(number(8));
+
+/*Challenge: FizzBuzz Game
+Print numbers from 1 to 30, but:
+
+Print "Fizz" for multiples of 3.
+Print "Buzz" for multiples of 5.
+Print "FizzBuzz" for multiples of both 3 and 5.
+Hint: Use the if-else statements with modulus (%).*/
+
+for (let num = 1; num < 31; num++) {
+    if (num % 3===0 && num % 5===0) {
+        console.log('FizzBuzz');
+    } else if (num % 3===0){
+        console.log('fizz');
+    } else if (num % 5===0) {
+        console.log('Buzz');
+    } else {
+        console.log(num);
+    }
+}
+
+const colours = ['red', 'blue', 'white', 'green', 'pink'];
+console.log(colours);
+colours[3]='purple'
+console.log(colours);
+colours.push('lemon green');
+colours.unshift('navy blue');
+console.log(colours);
+console.log(colours.indexOf('pink'))
+console.log(colours.includes('gold'))
 
 
+/*const coloursLength = colours.sort(function(a,b){
+    return a.length - b.length
+})
+console.log(coloursLength);
 
+function sortColoursAlphabetic (colours){
+    return colours.sort(function(a,b){
+        return a.localeCompare(b);
+    })
+}
+console.log(sortColoursAlphabetic(colours));
 
+let array = ('Hello World')
+console.log(array.split(','));*/
 
+/*const coloursLenght=colours.sort((a,b)=>a.length-b.length);
+console.log(coloursLenght);
 
->>>>>>> 30955fc2da86de25452d496393e7eff52c91a0d4
+const sortcoloursAlphabet=((colours)=>colours.sort((a,b)=>a.localeCompare(b)))
+console.log(sortcoloursAlphabet(colours));*/
+
+const coloursLenght = colours.sort((a,b)=>a.length - b.length);
+console.log(coloursLenght);
+
+const sortColoursAlphabet = function alphabet(colours){
+    return colours.sort((a,b)=>a.localeCompare(b));   
+}
+console.log(sortColoursAlphabet(colours))
+
+const btn = document.querySelector('.btn');
+const search = document.querySelector('.search');
+const input = document.querySelector('.input');
+const bi = document.querySelector('.bi');
+
+btn.addEventListener('click', function (e) {
+    e.preventDefault();
+    if (input.style.width === '3%' || input.style.width === '' ) {
+        input.style.width = '80%';
+    } else {
+        input.style.width = '3%';
+    }
+
+});
+
+const coloursJson= JSON.stringify(colours);
+console.log(coloursJson);
