@@ -45,7 +45,7 @@ console.log(divDesign);
  divDesign[2].style.cursor = 'pointer';
 
  const incrementCount = ( ) => {
-    count;
+    count==;
     divDesign[2].textContent = count;
  }
 
