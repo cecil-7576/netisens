@@ -1,0 +1,14 @@
+body {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+.left {
+    margin-right: 40%;
+    margin-top: 50px;
+}
+
+.right {
+    margin-bottom: 50px;
+}
