@@ -98,26 +98,102 @@ for (var i=0; i < odd.length; i++){
 }*/
 
 //TRAVERSING THE DOM
-//var itemList = document.querySelector('#items')
-//parentNode
+var itemList = document.querySelector('#items')
+//  parentNode
 // console.log(itemList.parentNode);
-// itemList.parentNode.style.backgroundColor = '#f4f4f4';
+// itemList.parentNode.style.backgroundColor = 'red';
 // console.log(itemList.parentNode.parentNode);
+// itemList.parentNode.parentNode.style.backgroundColor = 'blue';
+// itemList.parentNode.parentNode.parentNode.style.backgroundColor = 'green';
+// itemList.parentNode.parentNode.parentNode.parentNode.style.backgroundColor = 'white';
 // console.log(itemList.parentNode.parentNode.parentNode);
 // console.log(itemList.parentNode.parentNode.parentNode.parentNode);
 
-//parentElement
-// console.log(itemList.parentElement);
+//parentElement is the same as parentNode
+//console.log(itemList.parentElement);
 // itemList.parentElement.style.backgroundColor = '#f4f4f4';
 // console.log(itemList.parentElement.parentElement);
 // console.log(itemList.parentElement.parentElement.parentElement);
 // console.log(itemList.parentElement.parentElement.parentElement.parentElement);
 
-// childNodes
+//childNodes
 //console.log(itemList.childNodes);
 
 // childrenNodes
-//console.log(itemList.children)
+console.log(itemList.children)
+// console.log(itemList.children[0]);
+// itemList.children[0].style.backgroundColor = 'yellow';
+// itemList.children[1].style.backgroundColor = 'red';
+// itemList.children[2].style.backgroundColor = 'green';
 
-let box = document.getElementById('box');
-box.style.backgroundColor = "blue";
+// // FirstChild same as LastChild
+// console.log(itemList.firstChild);
+
+// // FirstElementChild same as Lastchild
+//console.log(itemList.lastElementChild);
+// itemList.firstElementChild.textContent = 'Number 1';
+
+// // NextSibling 
+// console.log(itemList.nextSibling);
+ console.log(itemList.nextElementSibling);
+//  console.log(itemList.previousElementSibling);
+  itemList.previousElementSibling.style.backgroundColor = 'pink';
+//  itemList.previousElementSibling.style.borderRadius = '5px';
+//  itemList.previousElementSibling.style.color = 'white';
+let span = document.getElementsByTagName('span');
+console.log(span);
+let spanText = document.createTextNode('Im a span with Text');
+console.log(spanText);
+
+let input = document.getElementsByTagName('input');
+console.log(input);
+input[0].value = 'placeholder';
+input[0].style.fontSize = '15px';
+input[1].value = 'Send';
+input[1].style.backgroundColor = 'green';
+console.log()
+
+
+// CreateElement 
+// Create a div
+
+ var newDiv = document.createElement('div');
+ 
+ console.log(newDiv);
+ newDiv.className = 'Hello';
+ newDiv.id = 'Hi';
+ newDiv.setAttribute('title', 'Hello Div');
+
+ var newDivText = document.createTextNode('Hello world, im a new div from js');
+
+ newDiv.appendChild(newDivText);
+
+ let container = document.querySelector('.containe #main');
+ let h1 = document.querySelector('.containe .title');
+
+ console.log(newDiv);
+ container.insertBefore(newDiv, h1);
+ container.style.fontSize = '13px';
+ container.style.padding = '10px'
+
+
+
+
+
+// console.log(newDiv);
+
+
+// const person = {
+//     name : 'Mary',
+//     age : 30,
+//     address : ['w60 Busa Buji',
+//         'Street Jos'
+//     ]
+// }
+
+// console.log(person);
+// person.name = 'Joseph';
+// console.log(person);
+// person['age']= 29;
+// console.dir(person);
+// console.log(person);
