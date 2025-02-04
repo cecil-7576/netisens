@@ -37,7 +37,7 @@ console.log(divDesign);
  //let targetDiv = divDesign[2];
  divDesign[2].style.width = '300px';
  divDesign[2].style.height = '300px';
- divDesign[2].style.backgroundColor = 'blue';
+ divDesign[2].style.backgroundColor = '#66a6d0';
  divDesign[2].textContent = count;
  divDesign[2].style.alignItems = 'center';
  divDesign[2].style.color = 'white';
