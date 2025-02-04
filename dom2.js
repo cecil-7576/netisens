@@ -25,6 +25,12 @@ function myAnswer(){
 }
 let count = 0;
 let incrementButton = document.getElementById('icr');
+let decrementButton = document.getElementById('dcr');
+let resetButton = document.getElementById('reset');
+let countElement = document.createElement('h1');
+countElement.textContent = count;
+
+
 
 let divDesign = document.getElementsByTagName('div');
 console.log(divDesign);
@@ -32,7 +38,7 @@ console.log(divDesign);
  divDesign[2].style.width = '300px';
  divDesign[2].style.height = '300px';
  divDesign[2].style.backgroundColor = 'blue';
- divDesign[2].innerText = count;
+ divDesign[2].textContent = count;
  divDesign[2].style.alignItems = 'center';
  divDesign[2].style.color = 'white';
  divDesign[2].style.fontSize = '50px';
@@ -43,13 +49,45 @@ console.log(divDesign);
  divDesign[2].style.borderRadius= '50%';
  divDesign[2].style.justifyContent = 'center';
  divDesign[2].style.cursor = 'pointer';
+ const msg = document.querySelector('.msg');
+ const mgs = document.querySelector('.mgs');
 
- const incrementCount = ( ) => {
-    count==;
+//  const updateCount=function (){
+//     countElement.textContent = count;
+//  }
+
+ const incrementCount = function( ) {
+    if (count < 50) {
+    count++;
     divDesign[2].textContent = count;
+ } else {
+    msg.classList.add('error');
+    msg.innerHTML= 'Counter has reached the maximum limit 0f 50';
  }
+} 
 
- incrementButton.addEventListener('click', incrementCount)
+const decrementCount = function() {
+    if (count > 0) {
+        count--;
+        divDesign[2].textContent = count;
+        //updateCount();
+        //divDesign.appendChild(countElement);
+    } else {
+        //alert('Counter cannot go below 0!');
+        mgs.classList.add('error');
+        mgs.innerHTML= 'Counter cannot go below 0!';
+
+    }
+}
+
+const resetCount = function () {
+    count = 0;
+    divDesign[2].textContent = count;
+}
+
+ incrementButton.addEventListener('click', incrementCount);
+ decrementButton.addEventListener('click', decrementCount);
+ resetButton.addEventListener('click', resetCount);
 
 
 
