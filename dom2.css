@@ -4,11 +4,21 @@ body {
     height: 100vh;
 }
 
-.left {
-    margin-right: 40%;
-    margin-top: 50px;
+.buttons {
+    margin-left: -1%;
+    margin-top: 5px;
 }
 
-.right {
-    margin-bottom: 50px;
+.msg {
+    color: black;
+    margin-bottom: 20px;
 }
+
+.error{
+    background: rgb(0, 204, 255);
+    color: black;
+    padding: 3px;
+    border: 2px solid seagreen;
+    width: 40%;
+    border-radius: 10px;
+    text-align: center;
