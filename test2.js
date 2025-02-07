@@ -559,14 +559,12 @@ const li = document.querySelector('.item');
 li.style.background = 'red';
 const cta =document.querySelector('.cta');
 
-cta.style.background = 'brown';
-<<<<<<< HEAD
+/*cta.style.background = 'brown';
 cta.addEventListener('click', (function(e){
     e.preventDefaul();
     console.log('click');
-}))
-=======
-
+})
+*/
 cta.addEventListener('mouseover', (function(e){
     e.preventDefault();
     document.querySelector('#my-form').style.background = 'skyblue';
@@ -596,6 +594,3 @@ console.log(sentence);
 console.log(sentence.split(','));
 console.log(sentence.toUpperCase())
 
-
-
->>>>>>> 30955fc2da86de25452d496393e7eff52c91a0d4
