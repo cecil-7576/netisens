@@ -539,7 +539,7 @@ console.log(car1);
 
 
 const handSet = new Phone ('Phantom', 'Edge', 'Razor flip')
-
+  
 console.log(handSet);
 console.log(handSet.getMotoRolla())
 
