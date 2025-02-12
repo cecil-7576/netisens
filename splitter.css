@@ -1,0 +1,151 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #C5E4E7;
+}
+
+section {
+    display: grid;
+    place-content: center;
+    height: 100vh;
+}
+
+h3 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 5px;
+    font-weight: bolder;
+    font-size: larger;
+    color: #416668;
+    margin-top: 80px;  
+    padding-inline: 60px; 
+    margin-left: 35%; 
+}
+
+.white {
+    background-color: #FFFFFF;
+    width: 600px;
+    height: 300px;
+    border-radius: 25px;
+    padding-inline: 30px;
+    padding-top: 20px;
+    margin-top: 60px;
+}
+
+.green {
+    position: relative;
+    background-color: #00474B;
+    height: 270px;
+    width: 250px;
+    bottom: 285px;
+    left: 320px;
+    border-radius: 20px;
+
+}
+
+.bill {
+    margin-bottom: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+    color: #4A6B6A;
+}
+
+#dollar {
+    padding: 5px;
+    margin-top: 5px;
+    width: 50%;
+    background-color: #ECF1F4;
+    border: none;
+    font-family: monospace;
+
+}
+
+.tip {
+    margin-bottom: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+    color: #4A6B6A;
+}
+
+button {
+    padding: 11px;
+    width: 70px;
+    height: 30px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #00474B;
+    color: #FFFFFF;
+    font-family: monospace;
+    font-weight: 900;
+    line-height: 10px;
+    border: none;
+}
+
+.nop {
+    margin-bottom: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+    color: #4A6B6A;
+}
+
+.nopp {
+    padding: 5px;
+    margin-top: 5px;
+    width: 50%;
+    background-color: #ECF1F4;
+    border: none;
+}
+
+.tipamount {
+    color: #FFFFFF;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    padding-top: 17px;
+    display: flex;
+
+}
+
+h4 {
+    padding: 10px;
+    white-space: nowrap;
+    position: relative;
+}
+
+.para{
+    color: #4A6B6A;
+    position: fixed;
+    margin-top: 30px;
+
+}
+
+.paul {
+    margin: 5px;
+}
+
+.peter {
+    margin: 5px;
+    margin-left: 55px;
+}
+
+.cta {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #2CC1AD;
+}
+
+.reset {
+    background-color: #0D686D;
+    width: 200px;
+    color: #00474B;
+}
+
+.set {
+    bottom:450px;
+    margin-top: 100px;
+    left: 20px;
+    position: relative;
+    left: 341px;
+}
