@@ -1,43 +1,55 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
     <title>Creating a Splitter Bill calculator</title>
+
     <link rel="stylesheet" href="splitter.css">
 </head>
 <body>
-    <section>
+    <div class="section">
         <h3>SPLI<br>TTER</h3>
+        <div id="msg"></div>
         <div class="white">
+            <div class="input wrap">
             <label for="bill" class="bill">Bill</label><br>
-            <input type="text" name="bill" id="dollar" placeholder="$">
+            <span class="icon"><i class="bi bi-currency-dollar"></i></span>
+            <input type="text" id="dollar" placeholder="Enter your bill">
+            </div>
             <br>
             <br>
             <p class="tip">Select Tip %</p>
-            <button>5%</button> <button>10%</button> <button>15%</button><br>
+            <div>
+                <button class="percentage">5%</button> <button class="percentage">10%</button> <button class="percentage">15%</button><br>
+                <br>
+                <button class="percentage">25%</button> <button class="percentage">50%</button> <button style="color: #4A6B6A; background-color: #ECF1F4;" id="custom">Custom</button>
+            </div>
             <br>
-            <button>25%</button> <button>50%</button> <button style="color: #4A6B6A; background-color: #ECF1F4;">Custom</button>
-            <br>
-            <br>
-            <br>
-            <label for="num of people" class="nop">Number of People</label><br>
-            <input type="text" class="nopp" name="num of people"  placeholder="">
+            <div>
+                <label for="num of people" class="nop">Number of People</label><br>
+                <span class="icon"><i class="bi bi-person-fill"></i></span>
+                <input type="text" class="nopp" name="num of people" id="people" placeholder="1">
+            </div>
         </div>
         <div class="green">
             <div class="tipamount">
                 <br>
                 <h4>Tip Amount</h4>
                 <p class="para">/ person</p>
-                <div class="paul"><button class="cta">$0.00</button></div>
+                <div class="paul"><button class="cta" id="tip-amount">$0.00</button></div>
             </div>
             <div class="tipamount">
                 <h4>Total</h4>
                 <p class="para">/ person</p>
-                <div class="peter"><button class="cta">$0.00</button></div>
+                <div class="peter"><button class="cta" id="total-bill">$0.00</button></div>
                 <br>
             </div>
         </div>
-        <div class="set"><button class="reset">RESET</button></div>
-    </section>
+        <div class="set"><button class="reset" id="reset-button">RESET</button></div>
+    </div>
+
+    <script src="splitter.js"></script>
 </body>
 </html>
