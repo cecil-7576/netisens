@@ -8,11 +8,22 @@ body {
     background-color: #C5E4E7;
 }
 
-.section {
+section {
     display: grid;
     place-content: center;
     height: 100vh;
 }
+
+/* .container{
+    background-color: red;
+    height: 100%;
+    justify-content: space-between;
+    overflow: hidden;
+    display: block;
+    align-content: center;
+    margin-top: 20px;
+
+} */
 
 h3 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
