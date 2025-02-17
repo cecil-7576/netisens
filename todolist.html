@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="todolist.css">
+</head>
+<body>
+    <div class="container">
+        <div class="top">
+                <i class="icon"><i class="bi bi-list"></i></i>
+                <input type="text" id="inputDisplay" placeholder="Add a new Task..." >
+                <span onclick="addTask()" class="btn">Add Task</span>
+        </div>
+        <br>
+            <button class="ctn" onclick="clearAll()">Clear All</button>
+        <div class="filter-container">
+               <select name="" id="" class="form2">
+                <option value="All">All</option>
+                <option value="completed">Completed</option>
+                <option value="pending">Pending</option>
+               </select>
+        </div>
+        <div class="divider"></div>
+
+        <ul class="todo-list" id="taskList">
+            <li><label class="checkbox"><input type="checkbox">Learn Crypto tading</label></li>
+            <li><label><input type="checkbox">Learn UX/UX design</label></li>
+            <li><label><input type="checkbox">Learn CSS</label></li>
+            <li><label><input type="checkbox">Learn javaScript</label></li>
+        </ul>
+    </div>
+
+    <script src="todolist.js"></script>
+</body>
+</html>
