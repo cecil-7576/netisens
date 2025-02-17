@@ -19,7 +19,7 @@ billDisplay.addEventListener('keyup', (e)=>{
     calculate()
 })
 
-for(let tipPercentageButton of tipPercentageButtons) {
+/*for(let tipPercentageButton of tipPercentageButtons) {
     tipPercentageButton.addEventListener('click',  ()=>{
         // console.log(tipPercentageButton.textContent);
         tipPercentage = Number(tipPercentageButton.textContent.slice(0, -1));
@@ -28,14 +28,28 @@ for(let tipPercentageButton of tipPercentageButtons) {
         calculate();
 
     })
+}*/
+
+/*or this loop*/
+for (let i = 0; i < tipPercentageButtons.length; i++ ){
+    tipPercentageButtons[i].addEventListener('click', ()=>{
+        //console.log(tipPercentageButtons[i].textContent);
+        tipPercentage = Number(tipPercentageButtons[i].textContent.slice(0, -1));
+        tipPercentage = tipPercentage/100
+        console.log(tipPercentage);
+        calculate();
+    })
 }
 
-/*or this loop
-for (let i = 0; i < tipPercentageButtons.length; i++ ){
-    tipPercentageButtons[i].addEventListener('click', function () {
-        console.log(tipPercentageButtons[i].textContent);
-    })
-}*/
+customPercentageButton.addEventListener('click', ()=>{
+    tipPercentage = prompt('Enter your tip percentage');
+    tipPercentage = parseFloat(tipPercentage);
+    console.log({tipPercentage});
+    if(isNaN(tipPercentage)) {
+        return alert('Please enter a valid tip percentage')
+    }
+    calculate()
+})
 
 numPeopleDisplay.addEventListener('keyup', (e)=>{
     if (bill === '') {
@@ -53,7 +67,7 @@ const calculate = function () {
     if (isNaN(bill)){
         // return alert('bill must be a number please');
         msg.classList.add('error')
-        msg.textContent = ('bill must be a number please !')
+        msg.textContent = ('Bill must be a number please !')
         setTimeout(()=>msg.remove(), 4000)
     }
 
@@ -82,15 +96,7 @@ resetButton.addEventListener('click', ()=>{
     resetButton.classList.add('disabled');
 });
 
-customPercentageButton.addEventListener('click', ()=>{
-    tipPercentage = prompt('Enter your tip percentage');
-    tipPercentage = parseFloat(tipPercentage);
-    console.log({tipPercentage});
-    if(isNaN(tipPercentage)) {
-        return alert('Please enter a valid tip percentage')
-    }
-    calculate()
-})
+
 
 
 
