@@ -12,13 +12,13 @@
         <div class="top">
                 <i class="icon"><i class="bi bi-list"></i></i>
                 <input type="text" id="inputDisplay" placeholder="Add a new Task..." >
-                <span onclick="addTask()" class="btn">Add Task</span>
+                <span class="btn">Add Task</span>
         </div>
         <br>
-            <button class="ctn" onclick="clearAll()">Clear All</button>
+            <button class="ctn">Clear All</button>
         <div class="filter-container">
-               <select name="" id="" class="form2">
-                <option value="All">All</option>
+               <select name="" id="filter-todos" class="form2">
+                <option value="All" class="active">All</option>
                 <option value="completed">Completed</option>
                 <option value="pending">Pending</option>
                </select>
@@ -26,10 +26,21 @@
         <div class="divider"></div>
 
         <ul class="todo-list" id="taskList">
-            <li><label class="checkbox"><input type="checkbox">Learn Crypto tading</label></li>
-            <li><label><input type="checkbox">Learn UX/UX design</label></li>
+            <li class="task">
+                <div class="content">
+                    <input type="checkbox" onchange='toggleTaskCompletion(${index})' id="check-btn-${index}"${todos[index].completed ? 'checked' : ''}>
+                    <div class="spans">
+                        <span>Learn cryto trading</span>
+                        <span>
+                            <button><i class="bi bi-pen-fill"></i>Edit</button>
+                            <button><i class="bi bi-trash"></i>Delete</button>
+                        </span>
+                    </div>
+                </div>
+            </li>
+            <!-- <li><label><input type="checkbox">Learn UX/UX design</label></li>
             <li><label><input type="checkbox">Learn CSS</label></li>
-            <li><label><input type="checkbox">Learn javaScript</label></li>
+            <li><label><input type="checkbox">Learn javaScript</label></li> -->
         </ul>
     </div>
 
