@@ -13,7 +13,7 @@ let todoObject;
 
 // load existing todos from localStorage, if available, or initialize an empty array
 let todos = JSON.parse(localStorage.getItem('todos')) || [];
-console.log('todos: ', todos);
+//console.log('todos: ', todos);
 updateScreen(); // display the tasks on the screen 
 
 // function to create a new task from the user's input 
