@@ -28,17 +28,16 @@
         <ul class="todo-list" id="taskList">
             <li class="task">
                 <div class="content">
-                    <input type="checkbox" onchange='toggleTaskCompletion(${index})' id="check-btn-${index}"${todos[index].completed ? 'checked' : ''}>
+                    <input type="checkbox">
                     <div class="spans">
-                        <span>Learn cryto trading</span>
-                        <span>
+                        <span class="text">Learn cryto trading</span>
+                        <span class="setting">
                             <button><i class="bi bi-pen-fill"></i>Edit</button>
                             <button><i class="bi bi-trash"></i>Delete</button>
                         </span>
                     </div>
                 </div>
             </li>
-            
             <!-- <li><label><input type="checkbox">Learn UX/UX design</label></li>
             <li><label><input type="checkbox">Learn CSS</label></li>
             <li><label><input type="checkbox">Learn javaScript</label></li> -->
