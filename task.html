@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="task.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+</head>
+<body>
+    <div class="container">
+        <div class="stats-container">
+            <div class="detail">
+                <h1>Todo App</h1>
+                <p id="para">keep it up!</p>
+                <div id="progressBar">
+                    <div id="progess"></div>
+                </div>
+            </div>
+            <div class="stats-number">
+                <p id="numbers">0/0</p>
+            </div>
+        </div>
+
+        <form action="">
+            <button type="submit1" id="removeTask" class="red">x</button>
+            <input type="text" id="taskInput" placeholder="add your task">
+            <button type="submit2" id="newTask" class="blue">+</button>
+        </form>
+
+        <ul id="tasklist"></ul>
+            <!-- <li class=" taskItem">
+                <div class="task">
+                    <input type="checkbox" class="tickbox">
+                    <div class="spans">
+                        <label class="words">learn Js</label>
+                        <span class="settings">
+                            <button class="e"><i class="bi bi-pen-fill"></i></button>
+                            <button class="d"><i class="bi bi-trash"></i></button>
+                        </span>
+                    </div>
+                </div>
+             </li> -->
+    </div>
+
+
+
+    <script src="task.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+</body>
+</html>
