@@ -152,7 +152,7 @@ input {
     position: relative;
 }
 
-@media (max-width : 720px) {
+/* @media (max-width : 720px) {
     body {
         padding: 0 0px;
         margin-left: 150px;
@@ -163,7 +163,7 @@ input {
     }
 
 
-}
+} */
 
 /* .todo-list input[type="checkbox"] {
     margin: 5px;
