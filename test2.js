@@ -876,7 +876,4 @@ btn.addEventListener('click', function (e) {
         input.style.width = '3%';
     }
 
-});
-
-const coloursJson= JSON.stringify(colours);
-console.log(coloursJson);
+});    
