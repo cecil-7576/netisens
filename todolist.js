@@ -1,9 +1,10 @@
 // Dom selectors 
 const inputValue = document.getElementById('inputDisplay');
 const addNewTask = document.querySelector('.btn');
-const clearAllButton = document.querySelector('.ctn');
+const clearAllButton = document.querySelector('#calltoaction');
 const filterSelect = document.querySelector('#filter-todos');
 const myTodoList = document.querySelector('#taskList');
+const progressBar = document.getElementById('progress');
 
 // variable to hold the current task text
 let task;
@@ -11,7 +12,7 @@ let task;
 // load existing todos from localStorage, if available, or initialize an empty array
 let todos = JSON.parse(localStorage.getItem('todos')) || [];
 console.log('todos: ', todos);
-updateScreen();
+// updateScreen();
 
 // variable to hold the structure of the new task as an object
 let todoObject;
@@ -40,10 +41,12 @@ function createTodo(e){
 
 //function to add the new task to the todos array
 function addTodosArray(){
+    todos.push(todoObject);
     if(todoObject.task){
         todos.push(todoObject)
         localStorage.setItem('todos', JSON.stringify(todos));
         updateScreen();
+        updateStats();
     }else {
         alert('No empty task!')
     }
@@ -60,6 +63,7 @@ addNewTask.addEventListener('click', function(){
         alert('Please enter a valid task!')
     }else {
         addTodosArray()
+        updateStats()
     }
 });
 
@@ -67,7 +71,8 @@ addNewTask.addEventListener('click', function(){
 function addTodosArray(){
     todos.push(todoObject);
     localStorage.setItem('todos', JSON.stringify(todos));
-    updateScreen()
+    updateScreen();
+    updateStats();
 }
 
 console.log(todos);
@@ -96,14 +101,17 @@ function setFilter(){
             filteredTodos.push(todo);
         }
         updateScreen
+        updateStats()
     });
 
     console.log({filteredTodos});
 
     if (filter === 'all'){
-        updateScreen(todos); // show all task
+        updateScreen(todos); 
+        updateStats()// show all task
     } else {
-        updateScreen(filteredTodos); // pass filter todos to update the screen
+        updateScreen(filteredTodos); 
+        updateStats()// pass filter todos to update the screen
     }
 }
 
@@ -119,7 +127,8 @@ clearAllButton.addEventListener('click', clearAll())
 function toggleTaskCompletion(index){
     todos[index].complete = !todos[index].complete;
     localStorage.setItem('todos', JSON.stringify(todos));
-    updateScreen()
+    updateScreen();
+    updateStats();
 }
 
 filterSelect.addEventListener('change', setFilter);
@@ -127,13 +136,15 @@ filterSelect.addEventListener('change', setFilter);
 function editTodos(index){
     todos[index].task = prompt('Edit your task here!', todos[index].task);
     localStorage.setItem('todos', JSON.stringify(todos));
-    setFilter()
+    setFilter();
+    updateStats();
 }
 
 function deleteTodos(index){
    todos.splice(index, 1);
    localStorage.setItem('todos', JSON.stringify(todos));
    setFilter();
+   updateStats();
 }
 
 function updateScreen(){
@@ -141,9 +152,7 @@ function updateScreen(){
 
     inputValue.value = '';
 
-    if (todos.length < 1
-
-    ){
+    if (todos.length < 1 ){
         myTodoList.innerHTML = '<h3>No tasks found</h3>'
         return;
     }
@@ -179,7 +188,23 @@ function updateScreen(){
     }
 }
 
+let completeTasks;
+let totalTasks;
+let progress;
 
+function updateStats(){
+    completeTasks = todos.filter(task =>task.complete).length
+    totalTasks = todos.length
+    progress = (completeTasks/totalTasks) *100;
+    const progressBar = document.getElementById('progress');
+    progressBar.style.width = `${progress}%`;
+
+    // numbers.innerText = `${completeTasks} / ${totalTasks}`;
+
+    // if (tasks.length && completeTasks === totalTasks){
+    //     blaskConfetti()
+    // }
+}
 
 
 
