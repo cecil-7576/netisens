@@ -15,7 +15,10 @@
                 <span class="btn">Add Task</span>
         </div>
         <br>
-            <button class="ctn">Clear All</button>
+        <div id="progressBar">
+            <div id="progress"></div>
+        </div>
+            <button class="ctn" id="calltoaction">Clear All</button>
         <div class="filter-container">
                <select name="" id="filter-todos" class="form2">
                 <option value="All" class="active">All</option>
@@ -23,7 +26,7 @@
                 <option value="pending">Pending</option>
                </select>
         </div>
-        <div class="divider"></div>
+        <div class="divider"></div> 
 
         <ul class="todo-list" id="taskList">
             <li class="task">
