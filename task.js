@@ -24,7 +24,7 @@ const addTask = ()=>{
 }
 
 const updateTasklist = ()=>{
-    taskList.innerHTML = ''
+    taskList.innerHTML = '';
 
     taskInput.value = '';
 
