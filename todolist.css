@@ -40,6 +40,25 @@ input {
     overflow: hidden;
 }
 
+#progressBar{
+    width: 102%;
+    height: 16px;
+    border: 1px solid transparent;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    outline: none;
+    background-color:  #f3f2ed;
+}
+
+#progress{
+    width: 0%;
+    height: 15px;
+    background-color: #0078D4;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    margin-bottom: 11px;
+}
+
 /* input::placeholder {
     padding-left: 23px;
     text-align: 20px;
