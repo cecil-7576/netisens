@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="weather.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <title>Weather API</title>
+</head>
+<body>
+    
+    <div id="app">
+        <!--Search Bar-->
+        <div id="searchBar">
+            <input type="text" id="searchBarInput" placeholder="Search by City">
+            <button id="searchicon"><i class="bi bi-search"></i></button>
+        </div>
+
+        <!--Date & city-->
+        <div id="info">
+            <p id="date"></p>
+            <h3 id="city"></h3>
+        </div>
+
+        <!--Description-->
+        <div id="description"></div>
+
+        <!--Temp-->
+        <div id="temp"></div>
+
+        <!--Extra info-->
+        <div id="extrainfo">
+            <div class="col">
+                <div class="info">
+                    <h5>Highs</h5>
+                    <p id="tempMax"></p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="info">
+                    <h5>Lows</h5>
+                    <p id="tempMax"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="weather.js"></script>
+</body>
+</html>
