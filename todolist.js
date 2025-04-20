@@ -8,7 +8,7 @@ const progressBar = document.getElementById('progress');
 
 // variable to hold the current task text
 let task;
-
+ 
 // load existing todos from localStorage, if available, or initialize an empty array
 let todos = JSON.parse(localStorage.getItem('todos')) || [];
 console.log('todos: ', todos);
@@ -92,7 +92,7 @@ function setFilter(){
 
     filteredTodos = [];
 
-    todos.forEach(function(text){
+    todos.forEach((text)=>{
         todo = text;
 
         if (filter === 'pending' && !todo.completed){
