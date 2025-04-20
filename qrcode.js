@@ -29,6 +29,16 @@
  // .reduce
  // .sort
 
+ function x (call){
+    call() 
+ }
+
+ function y (){
+    console.log('printing from fn. y')
+ }
+
+ x(y);
+
 let scores = [
     {subject:'maths', score: 70 , day: 'monday'},
     {subject:'chemistry', score: 50, day: 'tuesday'},
@@ -39,6 +49,7 @@ let scores = [
 ]; 
 
 const ages = [33, 24, 25, 32, 67, 90, 21, 27, 68, 70, 18, 15, 12, 3];
+
 
 function calculateAges (operation, array) {
     let result ;
@@ -63,13 +74,13 @@ function calculateAges (operation, array) {
     }
 }
 
-calculateAges('find-smallest', ages)
+calculateAges('find-biggest', ages)
 
 const combine = ages
     // .map(age => age*2)
     .filter(age => age >= 40)
     .sort((a, b) => a - b)
-    .reduce((total, age) => total + age, 0)
+    .reduce((a, b) => a + b, 0)
 
 console.log(combine);
 
@@ -126,17 +137,14 @@ function getsum (result, value) {
 
 arrayCal(getsum, numbers);
 
-
-function pokemon () {
-    console.log('pikachu')
-}
+ 
 
 function callPokemon(hello) {
     hello()
     hello()
 }
 
- callPokemon(pokemon)
+//  callPokemon(pokemon)
 
 function callBackFn(func) {
     func();
@@ -194,6 +202,15 @@ function display(result) {
     console.log(result)
 }
 
+
+let g = 4;
+if(g*2 === 8) {
+    console.log("correct")
+} else {
+    "not correct"
+}
+
+console.log(g)
 // function cBFn (call) {
 //     call()
 // };
