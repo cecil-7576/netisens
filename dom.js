@@ -1149,30 +1149,112 @@ console.log(appearBack(nnumbers))
 // .then(data => console.log(data))
 // .catch(error=> console.log(error))
 
-const getAllProducts = async ()=>{
-  try {
-    const cecilio = await fetch('https://dummyjson.com/products/add', {
-      method: 'POST',
-      headers: {
-        'Content-Type' : 'application/json'
-      },
-      body: JSON.stringify({
-        title: 'Iphone wrisk watch series 4',
-        description: 'series 3',
-        category: 'wrisk watch black color',
-        price: '159.99'
-      })
-    })
-    const json = await cecilio.json();
-    console.log(json)
-  } catch (error){
-    console.log(error)
-  }
+// const getAllProducts = async ()=>{
+//   try {
+//     const cecilio = await fetch('https://dummyjson.com/products/add', {
+//       method: 'POST',
+//       headers: {
+//         'Content-Type' : 'application/json'
+//       },
+//       body: JSON.stringify({
+//         title: 'Iphone wrisk watch series 4',
+//         description: 'series 3',
+//         category: 'wrisk watch black color',
+//         price: '159.99'
+//       })
+//     })
+//     const json = await cecilio.json();
+//     console.log(json)
+//   } catch (error){
+//     console.log(error)
+//   }
+// }
+
+// getAllProducts()
+
+const kallbck = new Promise((resolve, reject)=>{
+  setTimeout(()=>{
+    let age = 12;
+
+    if(!age){
+      resolve('Chidubem is a correct guy')
+    } else {
+      reject('Chidubem nah correct guy')
+    }
+  }, 3000)
+})
+
+kallbck
+.then((value)=>{console.log(value)})
+.catch((error)=>{console.log(error)})
+
+
+const kallSoon = ()=>{
+  setTimeout(()=>{
+    console.log('kelvin correct guy')
+  }, 1500)
+  
 }
 
-getAllProducts()
+kallSoon()
 
-fetch()
-.then(response=> response.json())
-.then()
+const oAnde = ()=>{
+  
+  let even = [];
+  let odd = [];
+
+  for (let i = 0; i <= 50; i++ ){
+
+    let answer = i;
+
+    if (answer %2==0 ){
+      even.push(answer)
+    } else {
+      odd.push(answer)
+    }
+  }
+  return {even, odd}
+}
+
+console.log(oAnde())
+
+const score = [5, 9, 2, 7, 11]
+
+// const addTogether = (score)=>{
+
+//   let outKom = 0;
+
+//   for (let scores of score){
+//     outKom += scores 
+//   }
+
+//   console.log(outKom)
+// }
+
+// addTogether(score)/ const john =
+// score.sort((a, b)=> b - a)
+
+// console.log(john)
+
+const turn = (score)=>{
+  if (score.length === 0){
+    return null
+  }
+  console.log(score.reverse(score))
+   return Math.max(...score)
+   
+}
+
+console.log(turn(score))
+
+const logIn = (afa, keycode)=>{
+  let allow = {
+    afa : afa,
+    keycode : keycode
+  }
+
+  return allow
+}
+
+console.log(logIn('Ebuka', '12345'));
 
