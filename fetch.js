@@ -1,5 +1,5 @@
 const button = document.getElementById('loadjokebtn');
-
+const jokes = document.getElementById('loadingJokes')
 
 const loadJoke = async ()=>{
 
@@ -10,7 +10,7 @@ const loadJoke = async ()=>{
             }
         });
         const jokeData = await chuckNorrisFetch.json();
-        document.getElementById('loadingJokes').innerHTML = jokeData.value;
+        jokes.innerHTML = jokeData.value;
 
     } catch(error){
         console.log(error)
