@@ -17,7 +17,7 @@
     border-radius: 45px;
     background-image: linear-gradient(
         325deg,
-        hsl(240deg 97% 55%) 0%,
+        hsl(194, 28%, 88%) 0%,
         hsl(240deg 97% 65%) 32%,
         hsl(240deg 97% 70%) 59%,
         hsl(240deg 96% 75%) 74%,
@@ -60,6 +60,36 @@ input::placeholder {
     background-color: transparent;
     color: #fff;
     font-size: 1.5rem;
+}
+
+#searchicon:hover {
+    color: #AFAFFD;
+    font-size: 1.8rem;
+
+}
+
+#info {
+    line-height: 0.5rem;
+    color: #fff;
+}
+
+#info h3 {
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: .6em;
+
+}
+
+#description {
+    color: #64B7E9;
+    text-transform: uppercase;
+}
+
+#temp {
+    color: #DCEBEE;
+    font-size: 30px;
+    margin-top: 20px;
 }
 
 #extrainfo {

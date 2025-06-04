@@ -1,0 +1,266 @@
+.main {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #212020;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.section{
+  text-align: left;
+  border: 2px solid transparent;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2A2929;
+  color: #FFFFFF;
+  width: 50%;
+  height: 85%;
+}
+
+h2{
+  font-size: 23px;
+  text-align: center;
+  line-height: 10px;
+  padding-top: 20px;
+}
+
+p{
+  font-size: 12px;
+  text-align: center;
+  padding-bottom: 30px;
+  color: rgb(181, 181, 181)
+}
+
+.inputbox {
+  position: relative;
+  /* right: 20px; */
+  left: 50px;
+  padding: 0px;
+  align-items: center;
+}
+
+.inputbox label{
+  font-size: 11px;
+  width: 100%;
+  align-items: center;
+}
+
+.inputbox input{
+  display: flex;
+  width: 75%;
+  justify-content: center;
+  padding: 8px 8px;
+  align-items: center;
+  border-radius: 6px;
+  background-color: #2A2929;
+  border: 1px solid rgba(255, 255, 255, 0.267);
+  outline: none;
+  color: #FFFFFF;
+  font-family: inherit;
+}
+
+.signup{
+  font-weight: bold;
+  align-self: center;
+  justify-content: center;
+  /* margin: 10px 0 0 0; */
+  font-size: 12px;
+  padding: 10px 80px 10px 50px;
+  /* padding-right: 10px; */
+  text-align: left;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.button{
+  display: flex;
+  width: 79%;
+  justify-content: center;
+  padding: 8px 8px;
+  align-items: center;
+  border-radius: 6px;
+  background-color: #39B036;
+  border: 1px solid rgba(255, 255, 255, 0.267);
+  outline: none;
+  color: #FFFFFF;
+  font-family: inherit;
+  position: relative;
+  left: 50px;
+}
+
+.inputboxx input{
+  display: flex;
+  width: 120%;
+  justify-content: center;
+  padding: 8px 8px;
+  align-items: center;
+  border-radius: 6px;
+  background-color: #2A2929;
+  border: 1px solid rgba(255, 255, 255, 0.267);
+  outline: none;
+  color: #FFFFFF;
+  font-family: inherit;
+  position: relative;
+  right: 30px;
+}
+
+.inputboxx label{
+  font-size: 12px;
+  width: 100%;
+  align-items: center;
+  position: relative;
+  right: 30px;
+}
+
+.button2{
+  display: flex;
+  width: 127%;
+  justify-content: center;
+  padding: 8px 8px;
+  align-items: center;
+  border-radius: 6px;
+  background-color: #39B036;
+  border: 1px solid rgba(255, 255, 255, 0.267);
+  outline: none;
+  color: #FFFFFF;
+  font-family: inherit;
+  position: relative;
+  right: 30px;
+}
+
+.form{
+  margin-bottom: 50px;
+}
+
+.body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background-color: #EEECEC;
+}
+
+.form-kekeManage{
+  border: 2px solid transparent;
+  background-color: #FFFFFF;
+  right: 150px;
+  position: relative;
+  width: 129%; 
+  border-radius: 10px;
+  /* height: 20%; */
+  padding: 5px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.keke{
+  position: relative;
+  left: 180px;
+  top: 50px;
+}
+
+.keke label{
+  font-size: 15px;
+  position: relative;
+  bottom: 20px;
+  right: 100px; 
+  width: 100%;
+}
+
+.keke input{
+  display: flex;
+  width: 150%;
+  padding: 10px;
+  font-size: 12px;
+  position: relative;
+  right: 100px;
+  border-radius: 10px;
+  outline: none;
+  border: 1px solid #c7c3c3;
+  cursor: pointer;
+}
+
+.keke2{
+  position: relative;
+  right: 80px;
+  /* right: 100px;  */
+  /* padding: 10px; */
+  /* align-items: center; */
+}
+
+.keke2 label{
+  font-size: 15px;
+  position: relative;
+  top: 12px;
+  /* bottom: 40px;
+  left: 10px;  */
+  /* width: 100%; */
+}
+
+.keke2 a{
+  color: #212020;
+}
+
+.keke2 select{
+  display: flex;
+  width: 100%;
+  padding: 10px;
+  position: relative;
+  top: 40px;
+  right: 60px;
+  border-radius: 10px;
+  outline: none;
+  border: 1px solid #c7c3c3;
+  font-size: 12px;
+}
+
+.keke-info{
+  padding: 20px;
+  position: relative;
+  top: 10px;
+  /* bottom: 120px;
+  right: 200px;  */
+}
+
+table{
+  border-collapse: separate;
+  /* height: 100px; */
+  position: relative;
+  left: 70px;
+
+}
+
+th, td{
+  /* border: 1px solid; */
+  padding: 20px;
+  /* gap: 50px; */
+  /* height: 9px; */
+  /* margin: 10px; */
+  font-size: small;
+  line-height: 0.7px;
+  position: relative;
+  top: 20px;
+}
+
+hr{
+  width: 730%;
+  position: relative;
+  left: 21px;
+  font-size: small;
+  font-weight: lighter;
+}
+
+.section2{
+}

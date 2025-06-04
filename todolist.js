@@ -92,7 +92,7 @@ function setFilter(){
 
     filteredTodos = [];
 
-    todos.forEach((text)=>{
+    todos.forEach(text=>{
         todo = text;
 
         if (filter === 'pending' && !todo.completed){
