@@ -6,6 +6,21 @@ function Component() {
     const[count, setCount]=useState(0);
     const [quantity, setQuantity]=useState();
     const[comment, setComment]= useState('');
+    const[area, setArea]= useState('');
+    const [select, setSelect]= useState('');
+    const [radio, setRadio] = useState('');
+
+    function tv (e){
+      setRadio(e.target.value)
+    }
+
+    function option (e){
+      setSelect(e.target.value)
+    }
+
+    const textArea = (e)=>{
+      setArea(e.target.value)
+    }
 
     const feedBack = (e)=>{
       setComment(e.target.value)
@@ -31,6 +46,17 @@ function Component() {
     }
   return (
     <div>
+        <label htmlFor="">Pick Up</label>
+        <select name="" id="" value={select} onChange={option}>
+        <option value="">Select an option</option>
+        <option value="Visa">Visa</option>
+        <option value="master card">Mastercard</option>
+        <option value="Vive">Vive</option>
+        <option value="Opay">Opay</option>
+        </select>
+      <p>Payment: {select}</p>
+      <input name="" type="number" value={area} onChange={textArea}></input>
+      <p>Idea: {area}</p>
       <textarea name="" value={comment} width= '200' id="" onChange={feedBack} placeholder='Enter delivery instructions '></textarea>
       <p>Comment: {comment}</p>
       <input value={quantity} onChange={handleQuantityChange} type="number"/>
