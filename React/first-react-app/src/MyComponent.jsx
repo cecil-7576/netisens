@@ -15,7 +15,7 @@ function MyComponent() {
     }
 
     const incrementAge = ()=>{
-        setAge(age + 1);
+        setAge(a=>a + 1);
     }
 
     const toggle = ()=>{

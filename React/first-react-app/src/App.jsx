@@ -5,6 +5,9 @@ import ProfilePicture from './ProfilePicture.jsx'
 import MyComponent from './MyComponent.jsx'
 import Counter from './Counter.jsx'
 import Component from './Component.jsx'
+import ColorPickerComponent from './ColorPickerComponent.jsx';
+import Object from './Object.jsx';
+import Array from './Array.jsx';
 
 function App() {
 
@@ -17,7 +20,12 @@ function App() {
       <ProfilePicture/>
       <MyComponent />
       <Counter /> */}
-      <Component />
+      <MyComponent />
+      <Object />
+      <Array />
+      {/* <Counter />
+      <MyComponent />
+      <ColorPickerComponent /> */}
     </>
   )
 }
