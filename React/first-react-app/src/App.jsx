@@ -8,6 +8,7 @@ import Component from './Component.jsx'
 import ColorPickerComponent from './ColorPickerComponent.jsx';
 import Object from './Object.jsx';
 import Array from './Array.jsx';
+import ArrayOfObject from './ArrayOfObject.jsx'
 
 function App() {
 
@@ -20,9 +21,10 @@ function App() {
       <ProfilePicture/>
       <MyComponent />
       <Counter /> */}
-      <MyComponent />
+      {/* <MyComponent />
       <Object />
-      <Array />
+      <Array /> */}
+      <ArrayOfObject/>
       {/* <Counter />
       <MyComponent />
       <ColorPickerComponent /> */}
